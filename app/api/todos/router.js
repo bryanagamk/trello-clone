@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const { getAll, create, getOne, update, destroy } = require('./controller')
-const { validateCreate, validateOne } = require('./validation')
+const { validateCreate, validateUpdate, validateOne } = require('./validation')
 
 /* GET home page. */
 router.get('/todos', getAll);
